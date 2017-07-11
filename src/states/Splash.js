@@ -1,7 +1,7 @@
 
 import Phaser from 'phaser'
 
-class Splash extends Phaser.State {
+export default class extends Phaser.State {
   init () {}
 
   preload () {
@@ -14,12 +14,10 @@ class Splash extends Phaser.State {
     //
     // load your assets
     //
-    this.load.image('mushroom', 'assets/images/mushroom.png')
+    this.load.image('mushroom', './assets/images/mushroom.png')
   }
 
   create () {
     this.state.start('Game')
   }
 }
-
-export default Splash

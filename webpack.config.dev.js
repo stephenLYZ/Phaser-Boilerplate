@@ -30,6 +30,11 @@ module.exports = {
 	      { test: /p2\.js/, use: ['expose-loader?p2'] }
 	    ]
 	},
+	node: {
+	    fs: 'empty',
+	    net: 'empty',
+	    tls: 'empty'
+	},
 	resolve: {
 	    alias: {
 	      'phaser': phaser,
